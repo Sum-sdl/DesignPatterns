@@ -1,7 +1,7 @@
 package app;
 
 import desgin.BaseTest;
-import desgin.adapter.ObjectAdapter;
+import desgin.adapter.InterfaceAdapter;
 
 /**
  * Created by sdl on 2017/6/12.
@@ -18,7 +18,9 @@ public class MainTest {
         //类适配器
 //        BaseTest test = new ClassAdapter();
         //对象适配器
-        BaseTest test = new ObjectAdapter();
+//        BaseTest test = new ObjectAdapter();
+        //接口适配器
+        BaseTest test = new InterfaceAdapter();
 
 
 
