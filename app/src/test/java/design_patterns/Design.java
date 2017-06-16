@@ -12,9 +12,8 @@ import app.MainTest;
 public class Design {
 
     @Test
-    public void design_func() throws Exception {
-        MainTest test = new MainTest();
-        test.design_factory();
+    public void pattern() throws Exception {
+        new MainTest().design_factory().startTest();
     }
 
 }

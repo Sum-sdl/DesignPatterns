@@ -1,7 +1,7 @@
 package app;
 
 import desgin.BaseTest;
-import desgin.structure.DecoratorPattern;
+import desgin.structure.BridgePattern;
 
 /**
  * Created by sdl on 2017/6/12.
@@ -9,23 +9,29 @@ import desgin.structure.DecoratorPattern;
 
 public class MainTest {
 
-    public void design_factory() {
+    public BaseTest design_factory() {
 
         //简单工厂模式
-//        BaseTest test = new SampleFactory();
+//       return new SampleFactory();
         //抽象工厂模式
-//        BaseTest test = new AbstractFactory();
+//        return new AbstractFactory();
+
+
         //类适配器
-//        BaseTest test = new ClassAdapter();
+//        return new ClassAdapter();
         //对象适配器
-//        BaseTest test = new ObjectAdapter();
+//       return new ObjectAdapter();
         //接口适配器
-//        BaseTest test = new InterfaceAdapter();
+//      return new InterfaceAdapter();
         //装饰者模式
-        BaseTest test = new DecoratorPattern();
+//        return new DecoratorPattern();
+//        代理模式
+//        return new ProxyPattern();
+        //外观模式
+//        return new FacadePattern();
+        //桥接模式
+        return new BridgePattern();
 
-
-        test.startTest();
     }
 
 }
