@@ -1,7 +1,7 @@
 package app;
 
 import desgin.BaseTest;
-import desgin.adapter.InterfaceAdapter;
+import desgin.structure.DecoratorPattern;
 
 /**
  * Created by sdl on 2017/6/12.
@@ -20,8 +20,9 @@ public class MainTest {
         //对象适配器
 //        BaseTest test = new ObjectAdapter();
         //接口适配器
-        BaseTest test = new InterfaceAdapter();
-
+//        BaseTest test = new InterfaceAdapter();
+        //装饰者模式
+        BaseTest test = new DecoratorPattern();
 
 
         test.startTest();

@@ -1,4 +1,4 @@
-package desgin.adapter;
+package desgin.structure.adapter;
 
 import desgin.BaseTest;
 
