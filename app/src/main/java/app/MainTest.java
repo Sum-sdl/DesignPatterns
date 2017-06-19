@@ -1,7 +1,7 @@
 package app;
 
 import desgin.BaseTest;
-import desgin.structure.BridgePattern;
+import desgin.structure.ComposePattern;
 
 /**
  * Created by sdl on 2017/6/12.
@@ -30,7 +30,9 @@ public class MainTest {
         //外观模式
 //        return new FacadePattern();
         //桥接模式
-        return new BridgePattern();
+//        return new BridgePattern();
+        //组合模式
+        return new ComposePattern();
 
     }
 
