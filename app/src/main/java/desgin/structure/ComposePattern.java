@@ -24,13 +24,16 @@ public class ComposePattern extends BaseTest {
         TreeNode nodeB1 = new TreeNode("B1");
         TreeNode nodeB2 = new TreeNode("B2");
         TreeNode nodeC = new TreeNode("C");
+        TreeNode nodeC1 = new TreeNode("C1");
+        TreeNode nodeC2 = new TreeNode("C2");
 
         //树B有树C
         nodeB.addChild(nodeB1);
         nodeB.addChild(nodeB2);
         nodeB.addChild(nodeC);
 
-        nodeB2.addChild(nodeC);
+        nodeB2.addChild(nodeC1);
+        nodeB2.addChild(nodeC2);
 
         tree.node.addChild(nodeB);
 
@@ -73,7 +76,8 @@ public class ComposePattern extends BaseTest {
         }
 
         public void printNode() {
-            print(name);
+            String size = children.size() > 0 ? "parent" : "child";
+            print(size + ":" + name);
         }
     }
 
