@@ -20,22 +20,24 @@ public class ComposePattern extends BaseTest {
     public void startTest() {
 
         Tree tree = new Tree("A");
-        TreeNode nodeB = new TreeNode("B");
         TreeNode nodeB1 = new TreeNode("B1");
+        TreeNode nodeB1_C1 = new TreeNode("B1_C1");
+        TreeNode nodeB1_C2 = new TreeNode("B1_C2");
+        TreeNode nodeB1_C3 = new TreeNode("B1_C3");
+        nodeB1.addChild(nodeB1_C1);
+        nodeB1.addChild(nodeB1_C2);
+        nodeB1.addChild(nodeB1_C3);
+
+
         TreeNode nodeB2 = new TreeNode("B2");
-        TreeNode nodeC = new TreeNode("C");
-        TreeNode nodeC1 = new TreeNode("C1");
-        TreeNode nodeC2 = new TreeNode("C2");
+        TreeNode nodeB2_C1 = new TreeNode("B2_C1");
+        nodeB2.addChild(nodeB2_C1);
 
-        //树B有树C
-        nodeB.addChild(nodeB1);
-        nodeB.addChild(nodeB2);
-        nodeB.addChild(nodeC);
+        TreeNode nodeB3 = new TreeNode("B3");
 
-        nodeB2.addChild(nodeC1);
-        nodeB2.addChild(nodeC2);
-
-        tree.node.addChild(nodeB);
+        tree.node.addChild(nodeB1);
+        tree.node.addChild(nodeB2);
+        tree.node.addChild(nodeB3);
 
         //遍历
         tree.print();
