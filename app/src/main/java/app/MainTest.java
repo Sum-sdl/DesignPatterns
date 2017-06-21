@@ -1,7 +1,7 @@
 package app;
 
 import desgin.BaseTest;
-import desgin.structure.ComposePattern;
+import desgin.structure.StrategyPattern;
 
 /**
  * Created by sdl on 2017/6/12.
@@ -32,7 +32,9 @@ public class MainTest {
         //桥接模式
 //        return new BridgePattern();
         //组合模式
-        return new ComposePattern();
+//        return new ComposePattern();
+        //策略模式
+        return new StrategyPattern();
 
     }
 
