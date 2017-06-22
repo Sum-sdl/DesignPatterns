@@ -1,7 +1,7 @@
 package app;
 
 import desgin.BaseTest;
-import desgin.structure.StrategyPattern;
+import desgin.structure.ObserverPattern;
 
 /**
  * Created by sdl on 2017/6/12.
@@ -34,7 +34,11 @@ public class MainTest {
         //组合模式
 //        return new ComposePattern();
         //策略模式
-        return new StrategyPattern();
+//        return new StrategyPattern();
+        //模板方法模式
+//        return new TemplatePattern();
+        //观察者模式
+        return new ObserverPattern();
 
     }
 
